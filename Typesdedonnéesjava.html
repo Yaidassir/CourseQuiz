@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types de données java</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar light-grey bar-block" style="width:24%">
+        <h3 class="bar-item">Menu</h3>
+        <a href="Introduction.html" class="bar-item button">Java introduction</a>
+        <a href="Variablesjava.html" class="bar-item button">Variables java</a>
+        <a href="Commentairejava.html" class="bar-item button">Commentaire java</a>
+        <a href="Typesdedonnéesjava.html" class="bar-item button">Types de données java</a>
+        <a href="Conversiondetypededonnées.html" class="bar-item button">Conversion de type de données  </a>
+        <a href="Opérateursjava.html" class="bar-item button">Opérateurs java </a>
+        <a href="Chainesjava.html" class="bar-item button">Chaines java </a>
+        <a href="Mathématiquesjava.html" class="bar-item button">Mathématiques java </a>
+        <a href="Javabooléens.html" class="bar-item button">Java booléens</a>
+        <a href="Javasi,sinon.html" class="bar-item button">Java si,sinon</a>
+        <a href="Javaboucletantque.html" class="bar-item button">Java boucle tant que</a>
+        <a href="Javabouclepour.html" class="bar-item button">Java boucle pour</a>
+        <a href="quiz/quiz.html" class="bar-item button block-background">Quizz</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="mob">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="Introduction.html">Introduction</a>
+                <a href="Variablesjava.html">Variables Java</a>
+                <a href="Commentairejava.html">Commentaire Java</a>
+                <a href="Javabooléens.html">Types de données Java</a>
+                <a href="Conversiondetypededonnées.html">Conversion de type de données</a>
+                <a href="Opérateursjava.html">Opérateurs java</a>
+                <a href="Chainesjava.html">Chaines java</a>
+                <a href="Mathématiquesjava.html">Mathématiquesjava</a>
+                <a href="Javabooléens.html">Javabooléens</a>
+                <a href="Javasi,sinon.html">Javasi,sinon</a>
+                <a href="Javaboucletantque.html">Javaboucletantque</a>
+                <a href="Javabouclepour.html">Javabouclepour</a>
+                <a href="quiz/quiz.html">Quiz</a>
+
+            </div>
+        </div>
+
+        <div class="container teal">
+            <h1>Types de données java</h1>
+        </div>
+
+        <h2>Les Primitives</h2>
+        <p>Java est un langage orienté objet, c'est-à-dire que les éléments manipulés sont des classes, ou plus exactement des objets, c'est-à-dire des instances de classes.</p>
+        <p>Toutefois ces objets contiennent des données possèdant un type (et une représentation). Ces données sont un ensemble d'éléments stockés en mémoire et baptisés pour l'occasion primitives. Les données manipulées avec Java, sont typées, c'est-à-dire
+            que pour chaque donnée que l'on utilise (dans les variables par exemple) il faut préciser le type de donnée, ce qui permet de connaître l'occupation mémoire (le nombre d'octets) de la donnée ainsi que sa représentation, cela peut être entre
+            autres :</p>
+        <ul>
+            <li>des nombres entiers: (int)</li>
+            <li>réels, c'est-à-dire à virgules (float)</li>
+        </ul>
+
+        <p>De plus, le langage Java introduit un type de donnée appelée boolean. Ce type de variable accepte deux états :</p>
+        <ul>
+            <li>True (vrai): correspondant à une valeur vraie</li>
+            <li>False (faux): correspondant à une valeur fausse</li>
+        </ul>
+
+        <p>En réalité, toutes les valeurs différentes de True sont considérées comme fausses (donc considérées comme égales à False). Si la variable n'est pas initialisée, sa valeur par défaut est False.</p>
+
+        <h3>Nombre entier (int)</h3>
+        <p>Un nombre entier est un nombre sans virgule qui peut être exprimé dans différentes bases :</p>
+        <ul>
+            <li>Base décimale: L'entier est représenté par une suite de chiffre unitaires (de 0 à 9) ne devant pas commencer par le chiffre 0</li>
+            <li>Base hexadécimale: L'entier est représenté par une suite d'unités (de 0 à 9 ou de A à F (ou a à f)) devant commencer par 0x ou 0X</li>
+            <li>Base octale: L'entier est représenté par une suite d'unités (incluant uniquement des chiffres de 0 à 7) devant commencer par 0</li>
+        </ul>
+        <p>Les entiers sont signés par défaut, cela signifie qu'ils comportent un signe. Pour stocker l'information concernant le signe (en binaire), les ordinateurs utilisent le complément à deux</p>
+
+        <h3>Nombre à virgule (float)</h3>
+        <p>Un nombre à virgule flottante est un nombre à virgule, il peut toutefois être représenté de différentes façons :</p>
+        <ul>
+            <li>un entier décimal: 895</li>
+            <li>un nombre comportant un point (et non une virgule): 845.32</li>
+            <li>une fraction: 27/11</li>
+            <li>un nombre exponentiel, c'est-à-dire un nombre (éventuellement à virgule) suivi de la lettre e (ou E), puis d'un entier correspondant à la puissance de 10 (signé ou non, c'est-à-dire précédé d'un + ou d'un -)</li>
+        </ul>
+        <p>En réalité, les nombres réels sont des nombres à virgule flottante, c'est-à-dire un nombre dans lequel la position de la virgule n'est pas fixe, et est repérée par une partie de ses bits (appelée l'exposant), le reste des bits permettent de coder
+            le nombre sans virgule (la mantisse).</p>
+
+
+        <p>Les nombres de type float sont codés sur 32 bits dont :</p>
+        <ul>
+            <li>23 bits pour la mantisse</li>
+            <li>8 bits pour l'exposant</li>
+            <li>1 bit pour le signe</li>
+        </ul>
+
+        <p>Les nombres de type double sont codés sur 64 bits dont :</p>
+        <ul>
+            <li>52 bits pour la mantisse</li>
+            <li>11 bits pour l'exposant</li>
+            <li>1 bit pour le signe</li>
+        </ul>
+
+        <h3>Caractère (char)</h3>
+        <p>Le type char (provenant de l'anglais character) permet de stocker la valeur Unicode, codée sur 16 bits, d'un caractère, c'est-à-dire un nombre entier codé sur 16 bits, soit 65000 caractères ! Par conséquent il est possible de stocker un caractère
+            accentué dans une variable de type char. Si jamais on désire par exemple stocker la lettre B, on pourra définir cette donnée soit par son code Unicode (\u0066), soit en notant 'B' ou les apostrophes simples signifient code ascii de...</p>
+
+        <h3>Chaînes de caractère (String)</h3>
+        <p>Les chaînes de caractères ne correspondent pas à un type de données mais à une classe, ce qui signifie qu'une chaîne de caractère est un objet possèdant des attributs et des méthodes. Une chaîne peut donc être déclarée de la façon suivante : String
+            s = "Chaine de caractères";</p>
+
+        <strong><p>Voici un tableau répertoriant les primitives (types de données) de Java :</p></strong>
+
+        <table id="customers">
+            <tr>
+                <th>Primitive</th>
+                <th>Signification</th>
+                <th>Taille (en octets)</th>
+            </tr>
+            <tr>
+                <td>char</td>
+                <td>Caractère</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>byte</td>
+                <td>Entier très court</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>short</td>
+                <td>Entier court</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>Entier</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>long</td>
+                <td> Entier long</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>flottant (réel)</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>flottant double</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>boolean</td>
+                <td>booléen</td>
+                <td>1</td>
+            </tr>
+
+        </table>
+        <a href="Commentairejava.html" class="previous" class="tt">&laquo; Previous</a>
+        <a href="Conversiondetypededonnées.html" class="suivant" class="tt">Next &raquo;</a>
+
+        <footer>
+
+            <h2>Contact us on :</h2>
+            <a id="nodeco" href="mailto:dinoqq@outlook.fr">dinoqq@outlook.fr</a>
+            <p class="gauch">Yassir Riache Tadjeddine &copy;</p>
+        </footer>
+
+
+
+
+</body>
+
+</html>
+
+
+<style>
+    #nodeco {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .tt {
+        display: inline-block;
+    }
+    
+    .previous {
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 20px;
+        margin-top: 40px;
+        margin-left: 200px;
+        background-color: #f1f1f1;
+        color: black;
+    }
+    
+    .suivant {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 20px;
+        margin-top: 40px;
+        margin-left: 300px;
+        margin-bottom: 30px;
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    .mob {
+        margin-left: 25%
+    }
+    /*
+    body {
+        background-color: aqua;
+    }
+    
+    .BOX {
+        height: 400px;
+        width: 200px;
+        background-color: white;
+        position: absolute;
+        margin: 0 auto;
+        top: 20%;
+    }
+
+    */
+    
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    footer .gauch {
+        text-align: left;
+        margin-left: 30px;
+    }
+    
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+    
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #67bd6a;
+        color: white;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        animation: fade 0.3s ease forwards;
+    }
+    
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .container {
+        padding: 0.01em 16px
+    }
+    
+    .teal {
+        color: #fff;
+        background-color: #009688
+    }
+    
+    .container:after,
+    .container:before,
+    .bar:before,
+    .bar:after {
+        display: table;
+        clear: both;
+    }
+    
+    .bar-block .button,
+    .bar-block .button {
+        width: 100%;
+        text-align: left;
+        padding: 8px 16px
+    }
+    
+    .button:hover {
+        color: #000;
+        background-color: #ccc
+    }
+    
+    .bar .button {
+        white-space: normal
+    }
+    
+    .button {
+        width: 100%
+    }
+    
+    .button:first-child {
+        background-color: #ccc;
+        color: #000
+    }
+    
+    .button:disabled {
+        cursor: not-allowed;
+        opacity: 0.3
+    }
+    
+    .btn,
+    .button {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap
+    }
+    
+    .bar-item {
+        text-align: center
+    }
+    
+    .bar .bar-item {
+        padding: 8px 16px;
+        float: left;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0
+    }
+    
+    .bar-block .bar-item {
+        text-align: center
+    }
+    
+    .bar-block {
+        width: 100%
+    }
+    
+    .bar-block.button {
+        width: 100%;
+        text-align: left;
+        padding: 8px 16px
+    }
+    
+    .bar-block .bar-item {
+        width: 100%;
+        display: block;
+        padding: 8px 16px;
+        text-align: left;
+        border: none;
+        white-space: normal;
+        float: none;
+        outline: 0
+    }
+    
+    .bar-block.bar-item {
+        text-align: center
+    }
+    
+    .sidebar {
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        overflow: auto
+    }
+    
+    .light-grey {
+        color: #000;
+        background-color: #f1f1f1
+    }
+    
+    @media screen and (max-width: 480px) {
+        .sidebar {
+            display: none;
+        }
+        .suivant {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 100px;
+        }
+        .previous {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+        }
+        .mob {
+            margin-left: 0%;
+            margin-right: 5px;
+        }
+        .dropdown .dropbtn {
+            display: block;
+        }
+        .dropdown {
+            width: 100%;
+        }
+        .mob .dropdown .dropbtn {
+            width: 100%;
+        }
+    }
+    
+    .dropbtn {
+        background-color: #6b6a6af3;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #59915b;
+    }
+</style>

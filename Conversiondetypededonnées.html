@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion de type de données</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar light-grey bar-block" style="width:24%">
+        <h3 class="bar-item">Menu</h3>
+        <a href="Introduction.html" class="bar-item button">Java introduction</a>
+        <a href="Variablesjava.html" class="bar-item button">Variables java</a>
+        <a href="Commentairejava.html" class="bar-item button">Commentaire java</a>
+        <a href="Typesdedonnéesjava.html" class="bar-item button">Types de données java</a>
+        <a href="Conversiondetypededonnées.html" class="bar-item button">Conversion de type de données</a>
+        <a href="Opérateursjava.html" class="bar-item button">Opérateurs java </a>
+        <a href="Chainesjava.html" class="bar-item button">Chaines java </a>
+        <a href="Mathématiquesjava.html" class="bar-item button">Mathématiques java </a>
+        <a href="Javabooléens.html" class="bar-item button">Java booléens</a>
+        <a href="Javasi,sinon.html" class="bar-item button">Java si,sinon</a>
+        <a href="Javaboucletantque.html" class="bar-item button">Java boucle tant que</a>
+        <a href="Javabouclepour.html" class="bar-item button">Java boucle pour</a>
+        <a href="quiz/quiz.html" class="bar-item button block-background">Quizz</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="mob">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="Introduction.html">Introduction</a>
+                <a href="Variablesjava.html">Variables Java</a>
+                <a href="Commentairejava.html">Commentaire Java</a>
+                <a href="Javabooléens.html">Types de données Java</a>
+                <a href="Conversiondetypededonnées.html">Conversion de type de données</a>
+                <a href="Opérateursjava.html">Opérateurs java</a>
+                <a href="Chainesjava.html">Chaines java</a>
+                <a href="Mathématiquesjava.html">Mathématiquesjava</a>
+                <a href="Javabooléens.html">Javabooléens</a>
+                <a href="Javasi,sinon.html">Javasi,sinon</a>
+                <a href="Javaboucletantque.html">Javaboucletantque</a>
+                <a href="Javabouclepour.html">Javabouclepour</a>
+                <a href="quiz/quiz.html">Quiz</a>
+
+            </div>
+        </div>
+
+        <div class="container teal">
+            <h1>Conversion de type de données</h1>
+        </div>
+
+
+        <h2>Qu'est-ce que ç'est la conversion de type java</h2>
+        <p>On appelle conversion de type de données, parfois transtypage (traduction de l'anglais casting), elle se produit lorsque vous attribuez une valeur d'un type de données primitif à un autre type .</p>
+        <p>En Java, il existe deux types de casting(y'en a d'autres types de conversion de type) :</p>
+        <ul>
+            <li>Élargissement de la diffusion (automatiquement) - conversion d'un type plus petit en un texte plus grand <br> byte -> short -> char -> int -> long -> float -> double</li>
+            <p>Exemple :</p>
+            <div class="code">
+                <p class="exem">
+                    class Main { public static void main(String[] args) { <br> // create int type variable <br> int num = 10; <br> System.out.println("The integer value: " + num); <br>
+                    <br> // convert into double type <br> double data = num; <br> System.out.println("The double value: " + data); <br> } }
+                    <br>
+                </p>
+            </div>
+
+            <li>Coulage étroit (manuellement) - conversion d'un type plus grand en un type de taille plus petite <br> double -> float -> long -> int -> char-> short -> byte </li>
+            <p>Exemple :</p>
+            <div class="code">
+                <p class="exem"> <br> class Main { public static void main(String[] args) { <br> // create double type variable <br> double num = 10.99; <br> System.out.println("The double value: " + num); <br>
+                    <br> // convert into int type <br> int data = (int)num; <br> System.out.println("The integer value: " + data); <br> } } <br><br> </p>
+            </div>
+        </ul>
+
+
+        <a href="Typesdedonnéesjava.html" class="previous" class="tt">&laquo; Previous</a>
+        <a href="Opérateursjava.html" class="suivant" class="tt">Next &raquo;</a>
+
+        <footer>
+
+            <h2>Contact us on :</h2>
+            <a id="nodeco" href="mailto:dinoqq@outlook.fr">dinoqq@outlook.fr</a>
+            <p class="gauch">Yassir Riache Tadjeddine &copy;</p>
+        </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+<style>
+    #nodeco {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .tt {
+        display: inline-block;
+    }
+    
+    .previous {
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 20px;
+        margin-top: 20px;
+        margin-left: 200px;
+        background-color: #f1f1f1;
+        color: black;
+    }
+    
+    .suivant {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 20px;
+        margin-top: 20px;
+        margin-left: 300px;
+        margin-bottom: 30px;
+        background-color: #4CAF50;
+        color: white;
+    }
+    /*
+    body {
+        background-color: aqua;
+    }
+    
+    .BOX {
+        height: 400px;
+        width: 200px;
+        background-color: white;
+        position: absolute;
+        margin: 0 auto;
+        top: 20%;
+    }
+
+    */
+    
+    .mob {
+        margin-left: 25%
+    }
+    
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    footer .gauch {
+        text-align: left;
+        margin-left: 30px;
+    }
+    
+    .container {
+        padding: 0.01em 16px
+    }
+    
+    .teal {
+        color: #fff;
+        background-color: #009688
+    }
+    
+    .container:after,
+    .container:before,
+    .bar:before,
+    .bar:after {
+        display: table;
+        clear: both;
+    }
+    
+    .bar-block .button,
+    .bar-block .button {
+        width: 100%;
+        text-align: left;
+        padding: 8px 16px
+    }
+    
+    .button:hover {
+        color: #000;
+        background-color: #ccc
+    }
+    
+    .bar .button {
+        white-space: normal
+    }
+    
+    .btn,
+    .button {
+        width: 100%
+    }
+    
+    .button:first-child {
+        background-color: #ccc;
+        color: #000
+    }
+    
+    .button:disabled {
+        cursor: not-allowed;
+        opacity: 0.3
+    }
+    
+    .btn,
+    .button {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap
+    }
+    
+    .bar-item {
+        text-align: center
+    }
+    
+    .bar .bar-item {
+        padding: 8px 16px;
+        float: left;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0
+    }
+    
+    .bar-block .bar-item {
+        text-align: center
+    }
+    
+    .bar-block {
+        width: 100%
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        animation: fade 0.3s ease forwards;
+    }
+    
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .code {
+        background-color: rgba(135, 170, 135, 0.616);
+        position: relative;
+    }
+    
+    .code .exem {
+        left: 30px;
+        position: relative;
+    }
+    
+    .bar-block .dropdown-hover .dropdown-content,
+    .bar-block .dropdown-click .dropdown-content {
+        min-width: 100%
+    }
+    
+    .bar-block .dropdown-hover .button,
+    .bar-block .dropdown-click .button {
+        width: 100%;
+        text-align: left;
+        padding: 8px 16px
+    }
+    
+    .bar-block .bar-item {
+        width: 100%;
+        display: block;
+        padding: 8px 16px;
+        text-align: left;
+        border: none;
+        white-space: normal;
+        float: none;
+        outline: 0
+    }
+    
+    .bar-block.center .bar-item {
+        text-align: center
+    }
+    
+    .sidebar {
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        overflow: auto
+    }
+    
+    .light-grey {
+        color: #000;
+        background-color: #f1f1f1
+    }
+    
+    @media screen and (max-width: 480px) {
+        .sidebar {
+            display: none;
+        }
+        .suivant {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 100px;
+        }
+        .previous {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+        }
+        .mob {
+            margin-left: 0%;
+            margin-right: 5px;
+        }
+        .dropdown .dropbtn {
+            display: block;
+        }
+        .dropdown {
+            width: 100%;
+        }
+        .mob .dropdown .dropbtn {
+            width: 100%;
+        }
+    }
+    
+    .dropbtn {
+        background-color: #6b6a6af3;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #59915b;
+    }
+</style>

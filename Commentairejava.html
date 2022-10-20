@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commentaire java</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar light-grey bar-block" style="width:24%">
+        <h3 class="bar-item">Menu</h3>
+        <a href="Introduction.html" class="bar-item button">Java introduction</a>
+        <a href="Variablesjava.html" class="bar-item button">Variables java</a>
+        <a href="Commentairejava.html" class="bar-item button">Commentaire java</a>
+        <a href="Typesdedonnéesjava.html" class="bar-item button">Types de données java</a>
+        <a href="Conversiondetypededonnées.html" class="bar-item button">Conversion de type de données  </a>
+        <a href="Opérateursjava.html" class="bar-item button">Opérateurs java </a>
+        <a href="Chainesjava.html" class="bar-item button">Chaines java </a>
+        <a href="Mathématiquesjava.html" class="bar-item button">Mathématiques java </a>
+        <a href="Javabooléens.html" class="bar-item button">Java booléens</a>
+        <a href="Javasi,sinon.html" class="bar-item button">Java si,sinon</a>
+        <a href="Javaboucletantque.html" class="bar-item button">Java boucle tant que</a>
+        <a href="Javabouclepour.html" class="bar-item button">Java boucle pour</a>
+        <a href="quiz/quiz.html" class="bar-item button block-background">Quizz</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="mob">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="Introduction.html">Introduction</a>
+                <a href="Variablesjava.html">Variables Java</a>
+                <a href="Commentairejava.html">Commentaire Java</a>
+                <a href="Javabooléens.html">Types de données Java</a>
+                <a href="Conversiondetypededonnées.html">Conversion de type de données</a>
+                <a href="Opérateursjava.html">Opérateurs java</a>
+                <a href="Chainesjava.html">Chaines java</a>
+                <a href="Mathématiquesjava.html">Mathématiquesjava</a>
+                <a href="Javabooléens.html">Javabooléens</a>
+                <a href="Javasi,sinon.html">Javasi,sinon</a>
+                <a href="Javaboucletantque.html">Javaboucletantque</a>
+                <a href="Javabouclepour.html">Javabouclepour</a>
+                <a href="quiz/quiz.html">Quiz</a>
+
+            </div>
+        </div>
+
+        <div class="container teal">
+            <h1>Commentaire java</h1>
+        </div>
+
+        <h2>Pourquoi Commenter ?</h2>
+        <p>Commenter et documenter son code est une tâche qui paraît très difficile à mettre en œuvre au commun des développeurs. La réponse la plus fréquente avancée par ceux qui ne veulent, n'aiment, ou ne savent pas commenter leur code est, bien entendu,
+            le peu de temps dont ils disposent pour développer. La réponse est erronée, mais il est important de comprendre pourquoi. Tous les articles que je vous propose vous parlent d'améliorer la robustesse du code. Cette robustesse passe par sa lisibilité.
+            Bien entendu, la lisibilité est souvent mise en avant pour les développements futurs, du coup on se dit que la documentation peut bien attendre la fin du développement. Mais la lisibilité du code vous apporte surtout une meilleure compréhension
+            de votre code, donc une robustesse accrue ! Il est donc hors de question de reporter à plus tard. En effet, pourquoi fournir un travail qui ne vous servirait pas à vous aussi, puisque c'est possible ?</p>
+        <p>Voilà donc une première bonne raison de documenter son code : le rendre lisible pour soi.</p>
+        <p>Une deuxième bonne raison : comprendre ce que l'on va écrire. En effet, écrire la javadoc avant de coder vous permet d'analyser votre besoin. Comme la granularité de cette analyse est très fine, ce sera de plus un bon point de départ pour améliorer
+            votre aptitude à l'analyse.</p>
+        <p>Enfin, documenter son code c'est aussi évidemment le rendre lisible pour les autres, et quoi qu'on en dise, savoir qu'autrui utilise votre code flatte l'égo.</p>
+        <p>Pourtant, documenter le code est une chose difficile, car il ne faut dire que l'essentiel, sans noyer le code, ni vous-même, sous des tonnes de commentaires. Pour ce faire, quelques petites règles simples peuvent aider à démarrer un commentaire
+            efficace.
+        </p>
+        <p>Tout court,es commentaires en Java sont des instructions qui ne sont pas exécutées par le compilateur et l’interpréteur. Les commentaires peuvent être utilisés pour fournir des informations ou des explications sur une variable, une méthode, une
+            classe ou toute instruction. Il peut également être utilisé pour masquer le code d’un programme.</p>
+
+        <h2>Types de commentaires en Java</h2>
+        <p>Il existe trois types de commentaires en Java :</p>
+        <ul>
+            <li>Commentaire sur une seule ligne</li>
+            <li>Commentaire sur plusieurs lignes</li>
+            <li>Commentaire de documentation</li>
+        </ul>
+
+        <h4>Commentaire sur une seule ligne</h4>
+        <p>Le commentaire sur une seule ligne est utilisé pour commenter une seule ligne <br> Syntaxe : <br> // ceci est un commentaire sur une seule ligne
+        </p>
+        <p>Exemple:</p>
+        <div class="code">
+            <p class="exem"> <br> public class Main { public static void main(String[] args) {<br> &nbsp;&nbsp; //Afficher le message Hello World!<br> &nbsp;&nbsp; System.out.println("Hello World!"); } }<br> <br>
+            </p>
+        </div>
+        <h4>Commentaire sur plusieurs lignes</h4>
+        <p>Le commentaire sur plusieurs lignes est utilisé pour commenter plusieurs lignes de code <br> Syntaxe : <br><br> /* <br> &nbsp; Ceci est un commentaire <br> &nbsp;&nbsp;sur plusieurs <br> &nbsp;&nbsp;lignes <br> */</p>
+        <p>Exemple:</p>
+        <div class="code">
+            <p class="exem"> <br> public class Main { public static void main(String[] args) {<br> /* <br> &nbsp; &nbsp; Déclarer et afficher <br> &nbsp; &nbsp; le message Hello World! <br> */ <br> &nbsp; &nbsp; String str = "Hello World!"; <br> &nbsp; &nbsp; System.out.println(str);
+                <br> } } <br><br>
+            </p>
+        </div>
+
+        <h4>Commentaire de documentation</h4>
+
+        <p>Ce type de commentaires est généralement utilisé lors de l’écriture du code pour un projet, car il permet de générer une page de documentation de référence, qui peut être utilisée pour obtenir des informations sur les méthodes, ses paramètres,
+            etc. <br></p>
+
+        <p> Syntaxe : <br> <br> /** <br> *
+            <br> * &nbsp;&nbsp; Ceci est un Commentaire <br> * &nbsp;&nbsp; de documentation <br> * <br> **/ <br>
+        </p>
+        <p>Exemple:</p>
+        <div class="code">
+            <p class="exem"> <br> /** <br> * <br> * Programme Java pour déclarer et afficher <br> * le message Hello World! <br> * <br> * @author Thomas babtise <br> * @version 2.5 <br> * @since 2021-12-10 <br> * @link www.waytolearnx.com <br> * <br> **/
+                <br> public class Main { <br> &nbsp;&nbsp; public static void main(String[] args) { <br> &nbsp;&nbsp; String str = "Hello World!"; <br> &nbsp;&nbsp; System.out.println(str); <br> } } <br>
+                <br> </p>
+        </div>
+
+        <a href="Variablesjava.html" class="previous" class="tt">&laquo; Previous</a>
+        <a href="Typesdedonnéesjava.html" class="suivant" class="tt">Next &raquo;</a>
+
+        <footer>
+
+            <h2>Contact us on :</h2>
+            <a id="nodeco" href="mailto:dinoqq@outlook.fr">dinoqq@outlook.fr</a>
+            <p class="gauch">Yassir Riache Tadjeddine &copy;</p>
+        </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+<style>
+    #nodeco {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .tt {
+        display: inline-block;
+    }
+    
+    .previous {
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 20px;
+        margin-top: 20px;
+        margin-left: 200px;
+        background-color: #f1f1f1;
+        color: black;
+    }
+    
+    .suivant {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 20px;
+        margin-top: 20px;
+        margin-left: 300px;
+        margin-bottom: 30px;
+        background-color: #4CAF50;
+        color: white;
+    }
+    /*
+    body {
+        background-color: aqua;
+    }
+    
+    .BOX {
+        height: 400px;
+        width: 200px;
+        background-color: white;
+        position: absolute;
+        margin: 0 auto;
+        top: 20%;
+    }
+
+    */
+    
+    .mob {
+        margin-left: 25%
+    }
+    
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    footer .gauch {
+        text-align: left;
+        margin-left: 30px;
+    }
+    
+    .container {
+        padding: 0.01em 16px
+    }
+    
+    .teal {
+        color: #fff;
+        background-color: #009688
+    }
+    
+    .code .exem {
+        left: 30px;
+        position: relative;
+    }
+    
+    .code {
+        background-color: rgba(135, 170, 135, 0.616);
+        position: relative;
+    }
+    
+    .container:after,
+    .container:before,
+    .bar:before,
+    .bar:after {
+        display: table;
+        clear: both;
+    }
+    
+    .bar-block .button,
+    .bar-block .button {
+        width: 100%;
+        text-align: left;
+        padding: 8px 16px
+    }
+    
+    .button:hover {
+        color: #000;
+        background-color: #ccc
+    }
+    
+    .bar .button {
+        white-space: normal
+    }
+    
+    .btn,
+    .button,
+    .dropdown-click.mobile,
+    .dropdown-click.mobile .btn,
+    .dropdown-click.mobile .button {
+        width: 100%
+    }
+    
+    .button:first-child {
+        background-color: #ccc;
+        color: #000
+    }
+    
+    .button:disabled {
+        cursor: not-allowed;
+        opacity: 0.3
+    }
+    
+    .btn,
+    .button {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap
+    }
+    
+    .bar-item {
+        text-align: center
+    }
+    
+    .bar .bar-item {
+        padding: 8px 16px;
+        float: left;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0
+    }
+    
+    .bar-block .bar-item {
+        text-align: center
+    }
+    
+    .bar-block .dropdown-hover,
+    .bar-block .dropdown-click {
+        width: 100%
+    }
+    
+    .bar-block .dropdown-hover .dropdown-content,
+    .bar-block .dropdown-click .dropdown-content {
+        min-width: 100%
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        animation: fade 0.3s ease forwards;
+    }
+    
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .bar-block .dropdown-hover .button,
+    .bar-block .dropdown-click .button {
+        width: 100%;
+        text-align: left;
+        padding: 8px 16px
+    }
+    
+    .bar-block .bar-item {
+        width: 100%;
+        display: block;
+        padding: 8px 16px;
+        text-align: left;
+        border: none;
+        white-space: normal;
+        float: none;
+        outline: 0
+    }
+    
+    .bar-block.center .bar-item {
+        text-align: center
+    }
+    
+    .sidebar {
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        overflow: auto
+    }
+    
+    .light-grey {
+        color: #000;
+        background-color: #f1f1f1
+    }
+    
+    @media screen and (max-width: 480px) {
+        .sidebar {
+            display: none;
+        }
+        .suivant {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 100px;
+        }
+        .previous {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+        }
+        .mob {
+            margin-left: 0%;
+            margin-right: 5px;
+        }
+        .dropdown .dropbtn {
+            display: block;
+        }
+        .dropdown {
+            width: 100%;
+        }
+        .mob .dropdown .dropbtn {
+            width: 100%;
+        }
+    }
+    
+    .dropbtn {
+        background-color: #6b6a6af3;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #59915b;
+    }
+</style>
